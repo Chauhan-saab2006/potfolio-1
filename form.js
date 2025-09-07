@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   // ✅ Initialize EmailJS with your public key
-  emailjs.init("M2lRr_x79Js8PS2P1");
+  emailjs.init("Your-api-key");
 
   // ✅ Get references to form elements
   const contactForm = document.getElementById("contactForm");
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // 📤 Send email via EmailJS
     emailjs
-      .send("service_c83zevc", "template_il4o8qx", templateParams)
+      .send("your-key", "your-key", templateParams)
       .then(() => {
         // ✅ Success feedback
         messageBox.textContent = "✅ Your message has been sent successfully!";
@@ -85,3 +85,4 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   });
 });
+
