@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+
+<body>
+  <nav class="nav">
+    <button onclick="showSection('home')">Home</button>
+    <button onclick="showSection('about')">About</button>
+    <button onclick="showSection('projects')">Projects</button>
+    <button onclick="showSection('contact')">Contact</button>
+  </nav>
+
+  <div class="sections">
+    <div id="home" class="section active">
+      <div class="home-content">
+        <p class="intro">Hi, I'm</p>
+        <h1 class="name">Ashwani Chauhan</h1>
+        <h2 class="role">Frontend Developer & UI Enthusiast</h2>
+        <p class="tagline">I create modern, responsive websites and web apps that delight users and drive results.
+          Passionate about clean code, creative interfaces, and seamless user experiences.</p>
+        <button onclick="showSection('projects')" class="btn">Projects</button>
+        <button onclick="showSection('contact')" class="btn alt">Contact</button>
+      </div>
+    </div>
+    <div id="about" class="section">
+      <div class="about-content-box">
+        <img src="images/dp.jpeg" alt="Profile picture" class="profile-pic" />
+        <p>Hello! I'm a passionate web developer and designer with over 1 years of experience in creating digital
+          solutions. My journey in tech started with a curiosity about how websites work, and it has evolved into a
+          career dedicated to crafting beautiful, functional, and user-centric experiences.</p>
+        <h2>My Skills</h2>
+        <ul>
+          <li><strong>Front-end:</strong> HTML5, CSS3, JavaScript, React,</li>
+          <li><strong>Other:</strong> Responsive Design, UI/UX Principles</li>
+        </ul>
+      </div>
+    </div>
+    <div id="projects" class="section">
+      <div class="project">
+        <img src="images/code-miestro.png" alt="Code Miestro">
+        <div class="project-popup">
+          <h3>Code Miestro</h3>
+          <p>A code editor web app with syntax highlighting and live preview. Built with HTML, CSS, JS.
+            <a href="https://code-miestro.netlify.app/" target="_blank">
+              <button>Demo</button>
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <img src="images/ai-assistant.png" alt="AI Assistant">
+        <div class="project-popup">
+          <h3>AI Assistant</h3>
+          <p>Smart AI chatbot for productivity and automation. Built with Python, Gemini api.
+            <a href="https://github.com/Chauhan-saab2006/ai_assistant" target="_blank">
+              <button>Github</button>
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <img src="images/music-app.png" alt="Music App">
+        <div class="project-popup">
+          <h3>Music App</h3>
+          <p>Modern music streaming app with playlists and recommendations. Built with Html , Css, Js.
+            <a href="https://music-0-app.netlify.app/" target="_blank">
+              <button>Demo</button>
+            </a>
+            <a href="https://github.com/Chauhan-saab2006/music--app" target="_blank">
+              <button>Github</button>
+            </a>
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <img src="images/window-11.png" alt="Windows 11 UI Clone">
+        <div class="project-popup">
+          <h3>Windows 11 UI Clone</h3>
+          <p>Pixel-perfect clone of Windows 11 desktop UI for web. Built with HTML, CSS, JS.
+            <a href="https://apmaos.netlify.app/" target="_blank">
+              <button>Demo</button>
+            </a>
+            <a href="https://github.com/Chauhan-saab2006/window-clone" target="_blank">
+              <button>Github</button>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="contact" class="section">
+      <div class="contact-content">
+        <div class="contact-info">
+          I'm always interested in new opportunities, freelance projects, or just a friendly chat about technology.
+          Feel free to reach out!
+          <ul class="contact-links">
+            <li>
+              <a href="https://www.instagram.com/ashwanichauhan868/" target="_blank">
+                <img src="images/instagram.jpg" class="social-icon" alt="Instagram">
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.linkedin.com/in/ashwani-chauhan-a66369377/" target="_blank">
+                <img src="images/linked.png" class="social-icon" alt="LinkedIn" class="icon">
+              </a>
+            </li>
+          </ul>
+
+        </div>
+        <form class="form-container" id="contactForm">
+          <input class="input-form" id="email" type="email" name="email" placeholder="Your Email" required>
+          <input class="input-form" id="message" name="message" placeholder="Your Message" required>
+          <button id="submit-form" class="submit-form" type="button">Send</button>
+          <p id="form-message" style="margin-top:10px; font-weight:bold;"></p>
+        </form>
+
+      </div>
+    </div>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+  <script src="form.js"></script>
+</body>
+
+</html>
